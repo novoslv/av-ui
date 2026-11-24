@@ -6,19 +6,15 @@ export interface SwatchProps {
   colour: string;
   /** Accessible name. Without it the swatch is decorative. */
   label?: string;
+  /** Hatched "nothing selected" look. Overrides `colour`. */
+  empty?: boolean;
 }
 
-export function Swatch({ colour, label }: SwatchProps) {
+export function Swatch({ colour, label, empty }: SwatchProps) {
   const style = { "--swatch": colour } as CSSProperties;
+  const cls = empty ? `${styles.swatch} ${styles.empty}` : styles.swatch;
   if (label) {
-    return (
-      <span
-        className={styles.swatch}
-        style={style}
-        role="img"
-        aria-label={label}
-      />
-    );
+    return <span className={cls} style={style} role="img" aria-label={label} />;
   }
-  return <span className={styles.swatch} style={style} aria-hidden="true" />;
+  return <span className={cls} style={style} aria-hidden="true" />;
 }

@@ -1,0 +1,9 @@
+.stack {
+  display: grid;
+  gap: var(--space-8);
+  max-height: var(--layout-controls-max-h);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-y;
+}

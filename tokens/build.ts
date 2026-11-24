@@ -56,8 +56,10 @@ export declare const token: (name: TokenName) => string;
 writeFileSync(
   new URL("fonts.css", dist),
   `${[400, 500, 600]
-    .map((w) => `@import "@fontsource/geist/${w}.css";`)
-    .concat([400, 500].map((w) => `@import "@fontsource/geist-mono/${w}.css";`))
+    .map((w) => `@import "@fontsource/geist/latin-${w}.css";`)
+    .concat(
+      [400, 500].map((w) => `@import "@fontsource/geist-mono/latin-${w}.css";`),
+    )
     .join("\n")}\n`,
 );
 console.log(`tokens: ${flat.length} variables`);

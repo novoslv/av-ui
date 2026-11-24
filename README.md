@@ -10,7 +10,7 @@ import "av-ui/style.css";
 import { Button, Slider } from "av-ui";
 ```
 
-Install pinned to a tag: `"av-ui": "github:novoslv/av-ui#v0.1.0"`.
+Install pinned to a tag: `"av-ui": "github:novoslv/av-ui#v0.2.0"`.
 
 ## Commands
 

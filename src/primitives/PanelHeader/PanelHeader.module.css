@@ -1,0 +1,14 @@
+.head {
+  font-family: var(--font-ui);
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.name {
+  flex: 1;
+  min-width: 0;
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-semi);
+  letter-spacing: var(--font-tracking-name);
+}

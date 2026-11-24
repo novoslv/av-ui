@@ -1,0 +1,12 @@
+.row {
+  display: flex;
+  gap: var(--space-4);
+  overflow-x: auto;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-x;
+}
+
+.row::-webkit-scrollbar {
+  display: none;
+}

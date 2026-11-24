@@ -1,0 +1,25 @@
+.row {
+  font-family: var(--font-ui);
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  padding: var(--space-4) var(--space-5);
+  border: 1px solid var(--colour-line);
+  border-radius: var(--radius-input);
+  background: var(--colour-card);
+}
+
+.label {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  font-size: var(--font-size-lg);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.actions {
+  display: flex;
+  flex: none;
+  gap: var(--space-3);
+}

@@ -1,6 +1,6 @@
 {
   "name": "av-ui",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Shared design system for the AV apps (Clip FX, MMV, ...)",
   "type": "module",
   "sideEffects": [

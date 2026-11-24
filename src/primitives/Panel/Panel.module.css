@@ -1,0 +1,7 @@
+.panel {
+  display: grid;
+  gap: var(--space-5);
+  margin-bottom: var(--space-4);
+  padding: var(--space-tight) 0 var(--space-5);
+  border-bottom: 1px solid var(--colour-line);
+}

@@ -1,0 +1,22 @@
+.input {
+  composes: ring from "../../shared/focus.module.css";
+  box-sizing: border-box;
+  width: 100%;
+  height: var(--size-select-h);
+  padding: 0 var(--space-5);
+  border: 1px solid var(--colour-line);
+  border-radius: var(--radius-input);
+  background: var(--colour-card);
+  color: var(--colour-fg);
+  font: var(--font-weight-medium) var(--font-size-lg) var(--font-ui);
+  -webkit-user-select: text;
+  user-select: text;
+}
+
+.input::placeholder {
+  color: var(--colour-muted);
+}
+
+.input:disabled {
+  opacity: var(--opacity-disabled);
+}

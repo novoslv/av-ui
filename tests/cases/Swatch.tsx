@@ -4,5 +4,6 @@ export default {
   red: <Swatch colour="hsl(0 90% 55%)" label="Reds" />,
   blue: <Swatch colour="hsl(225 90% 55%)" label="Blues" />,
   white: <Swatch colour="#fff" label="White" />,
+  empty: <Swatch colour="" empty label="Nothing" />,
   decorative: <Swatch colour="hsl(120 80% 48%)" />,
 };

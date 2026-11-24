@@ -7,3 +7,11 @@
   background: var(--swatch);
   box-shadow: inset 0 0 0 1px var(--colour-line);
 }
+
+.empty {
+  background: repeating-linear-gradient(
+    var(--size-hatch-angle),
+    var(--colour-line) 0 var(--size-hatch-line),
+    transparent var(--size-hatch-line) var(--size-hatch-gap)
+  );
+}
