@@ -1,0 +1,8 @@
+/* Compose into any element that animates: composes: calm from "../shared/motion.module.css"; */
+@media (prefers-reduced-motion: reduce) {
+  .calm,
+  .calm::before,
+  .calm::after {
+    transition: none !important;
+  }
+}

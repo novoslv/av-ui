@@ -1,0 +1,5 @@
+/* Compose into any interactive element: composes: ring from "../shared/focus.module.css"; */
+.ring:focus-visible {
+  outline: var(--focus-width) solid var(--colour-accent);
+  outline-offset: var(--focus-offset);
+}
