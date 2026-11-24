@@ -12,3 +12,7 @@
   padding-right: max(var(--space-gutter), env(safe-area-inset-right, 0px));
   background: var(--colour-scrim);
 }
+
+.solid {
+  background: var(--colour-bg);
+}

@@ -10,6 +10,13 @@ export default {
       </Sheet>
     </div>
   ),
+  solid: (
+    <div style={frame}>
+      <Sheet open solid>
+        <span>Sheet content</span>
+      </Sheet>
+    </div>
+  ),
   closed: (
     <div style={frame}>
       <Sheet open={false}>
