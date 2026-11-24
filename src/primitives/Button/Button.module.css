@@ -1,0 +1,59 @@
+.button {
+  composes: ring from "../../shared/focus.module.css";
+  composes: calm from "../../shared/motion.module.css";
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-4);
+  box-sizing: border-box;
+  border: none;
+  border-radius: var(--radius-pill);
+  font-family: var(--font-ui);
+  color: inherit;
+  cursor: pointer;
+  text-align: center;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+  transition:
+    background var(--motion-base),
+    color var(--motion-base),
+    border-color var(--motion-base);
+}
+
+.solid {
+  background: var(--colour-fg);
+  color: var(--colour-bg);
+  font-weight: var(--font-weight-semi);
+}
+
+.record {
+  background: var(--colour-rec);
+  color: var(--colour-on-rec);
+}
+
+.ghost {
+  padding: var(--space-4) var(--size-ghost-pad-x);
+  border: 1px solid var(--colour-line);
+  background: none;
+  font-size: var(--font-size-md);
+}
+
+.ghost[aria-expanded="true"] {
+  border-color: var(--colour-accent);
+  color: var(--colour-accent);
+}
+
+.md {
+  padding: var(--space-4) var(--size-ghost-pad-x);
+  font-size: var(--font-size-lg);
+}
+
+.lg {
+  padding: var(--space-6) var(--size-cta-pad-x);
+  font-size: var(--font-size-xl);
+}
+
+.button:disabled {
+  opacity: var(--opacity-disabled);
+  cursor: default;
+}

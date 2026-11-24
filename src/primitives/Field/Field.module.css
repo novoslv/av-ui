@@ -1,0 +1,35 @@
+.field {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.lab {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  color: var(--colour-muted);
+  font-size: var(--font-size-sm);
+}
+
+.name {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  font-size: var(--font-size-xs);
+  letter-spacing: var(--font-tracking-wide);
+  text-transform: uppercase;
+}
+
+.output {
+  color: var(--colour-fg);
+  font-family: var(--font-num);
+  font-size: var(--font-size-sm);
+  font-variant-numeric: tabular-nums;
+}
+
+.desc {
+  margin: 0;
+  color: var(--colour-muted);
+  font-size: var(--font-size-sm);
+  line-height: var(--font-leading-body);
+}

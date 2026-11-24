@@ -1,0 +1,16 @@
+.bar {
+  width: 100%;
+  height: var(--size-progress-h);
+  overflow: hidden;
+  border-radius: var(--radius-pill);
+  background: var(--colour-line);
+}
+
+.fill {
+  composes: calm from "../../shared/motion.module.css";
+  width: var(--p);
+  height: 100%;
+  border-radius: var(--radius-pill);
+  background: var(--colour-accent);
+  transition: width var(--motion-base) var(--motion-ease);
+}

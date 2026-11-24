@@ -1,0 +1,33 @@
+.icon {
+  composes: ring from "../../shared/focus.module.css";
+  composes: calm from "../../shared/motion.module.css";
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  box-sizing: border-box;
+  width: var(--size-info);
+  height: var(--size-info);
+  padding: 0;
+  border: 1px solid var(--colour-line);
+  border-radius: var(--radius-round);
+  background: none;
+  color: var(--colour-muted);
+  font: var(--font-weight-semi) var(--font-size-md) / 1 var(--font-ui);
+  cursor: pointer;
+  transition:
+    background var(--motion-base),
+    color var(--motion-base),
+    border-color var(--motion-base);
+}
+
+.icon[aria-pressed="true"] {
+  border-color: var(--colour-accent);
+  background: var(--colour-accent);
+  color: var(--colour-bg);
+}
+
+.icon:disabled {
+  opacity: var(--opacity-disabled);
+  cursor: default;
+}

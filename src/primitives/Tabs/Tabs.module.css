@@ -1,0 +1,26 @@
+.tabs {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(0, 1fr);
+  gap: var(--space-1);
+  padding: var(--space-1);
+  border: 1px solid var(--colour-line);
+  border-radius: var(--radius-seg);
+}
+
+.tab {
+  composes: ring from "../../shared/focus.module.css";
+  composes: calm from "../../shared/motion.module.css";
+  height: var(--size-seg-h);
+  border: none;
+  border-radius: var(--radius-seg-item);
+  background: none;
+  color: var(--colour-muted);
+  font: var(--font-weight-medium) var(--font-size-md) var(--font-ui);
+  cursor: pointer;
+}
+
+.tab[aria-selected="true"] {
+  background: var(--colour-accent);
+  color: var(--colour-bg);
+}

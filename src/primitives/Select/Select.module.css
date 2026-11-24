@@ -1,0 +1,21 @@
+.select {
+  composes: ring from "../../shared/focus.module.css";
+  -webkit-appearance: none;
+  appearance: none;
+  box-sizing: border-box;
+  height: var(--size-select-h);
+  padding: 0 var(--size-select-pad-end) 0 var(--space-5);
+  border: 1px solid var(--colour-line);
+  border-radius: var(--radius-input);
+  background:
+    var(--colour-card) var(--icon-chevron) no-repeat right
+    var(--size-chevron-inset) center / var(--size-chevron);
+  color: var(--colour-fg);
+  font: var(--font-weight-medium) var(--font-size-lg) var(--font-ui);
+  cursor: pointer;
+}
+
+.select:disabled {
+  opacity: var(--opacity-disabled);
+  cursor: default;
+}

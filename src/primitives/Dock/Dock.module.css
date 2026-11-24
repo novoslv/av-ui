@@ -1,0 +1,15 @@
+.dock {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: var(--z-dock);
+  padding-top: var(--space-4);
+  padding-bottom: calc(var(--space-6) + env(safe-area-inset-bottom, 0px));
+  padding-left: max(var(--space-gutter), env(safe-area-inset-left, 0px));
+  padding-right: max(var(--space-gutter), env(safe-area-inset-right, 0px));
+  border-top: 1px solid var(--colour-line);
+  background: var(--colour-panel);
+  backdrop-filter: blur(var(--blur-dock)) saturate(var(--blur-saturate));
+  -webkit-backdrop-filter: blur(var(--blur-dock)) saturate(var(--blur-saturate));
+}

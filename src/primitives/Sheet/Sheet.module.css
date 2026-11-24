@@ -1,0 +1,14 @@
+.sheet {
+  position: absolute;
+  inset: 0;
+  z-index: var(--z-sheet);
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  gap: var(--space-7);
+  padding-block: calc(var(--space-8) + env(safe-area-inset-top, 0px))
+    calc(var(--space-8) + env(safe-area-inset-bottom, 0px));
+  padding-left: max(var(--space-gutter), env(safe-area-inset-left, 0px));
+  padding-right: max(var(--space-gutter), env(safe-area-inset-right, 0px));
+  background: var(--colour-scrim);
+}

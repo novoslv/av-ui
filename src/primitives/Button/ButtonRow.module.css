@@ -1,0 +1,14 @@
+/* Evenly spaced row of buttons (the dock row). */
+.row {
+  display: grid;
+  grid-template-columns: repeat(var(--cols, 4), minmax(0, 1fr));
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.row > :is(button, label) {
+  box-sizing: border-box;
+  width: 100%;
+  height: var(--size-button-h);
+  padding: 0 var(--space-2);
+}
