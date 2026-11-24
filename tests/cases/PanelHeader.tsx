@@ -41,7 +41,7 @@ export default {
         onHelp={noop}
         helpLabel="Explain Edge Erosion"
         actions={
-          <Button variant="ghost" onClick={noop}>
+          <Button variant="ghost" size="sm" onClick={noop}>
             Presets
           </Button>
         }

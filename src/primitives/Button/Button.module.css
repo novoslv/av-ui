@@ -53,6 +53,13 @@
   font-size: var(--font-size-xl);
 }
 
+.sm {
+  box-sizing: border-box;
+  height: var(--size-info);
+  padding: 0 var(--space-5);
+  font-size: var(--font-size-sm);
+}
+
 .button:disabled {
   opacity: var(--opacity-disabled);
   cursor: default;

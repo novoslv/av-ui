@@ -2,7 +2,7 @@
   composes: calm from "../../shared/motion.module.css";
   position: relative;
   flex: none;
-  box-sizing: border-box;
+  /* content-box on purpose: the 1px border makes it 102x82, as in the reference */
   width: var(--size-card-w);
   height: var(--size-card-h);
   border: 1px solid var(--colour-line);

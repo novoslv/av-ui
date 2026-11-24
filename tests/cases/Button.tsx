@@ -19,6 +19,11 @@ export default {
       Effects
     </Button>
   ),
+  "ghost-sm": (
+    <Button variant="ghost" size="sm" onClick={noop}>
+      Presets
+    </Button>
+  ),
   record: (
     <Button tone="record" onClick={noop}>
       Export

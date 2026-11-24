@@ -8,7 +8,8 @@ export interface ButtonProps {
   variant?: "solid" | "ghost";
   /** record turns a solid button red (for example while recording). */
   tone?: "default" | "record";
-  size?: "md" | "lg";
+  /** sm = compact (as tall as the round help button), for panel headers. */
+  size?: "sm" | "md" | "lg";
   disabled?: boolean;
   /** For toggling a panel: sets aria-expanded and the accent state. */
   expanded?: boolean;
@@ -19,13 +20,13 @@ export interface ButtonProps {
 export function buttonClass(
   variant: "solid" | "ghost",
   tone: "default" | "record",
-  size: "md" | "lg",
+  size: "sm" | "md" | "lg",
 ): string {
   return [
     styles.button,
     styles[variant],
     tone === "record" && variant === "solid" ? styles.record : "",
-    variant === "solid" ? styles[size] : "",
+    size === "sm" ? styles.sm : variant === "solid" ? styles[size] : "",
   ]
     .filter(Boolean)
     .join(" ");

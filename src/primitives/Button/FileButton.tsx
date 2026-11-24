@@ -6,7 +6,7 @@ export interface FileButtonProps {
   onFile: (file: File) => void;
   accept?: string;
   variant?: "solid" | "ghost";
-  size?: "md" | "lg";
+  size?: "sm" | "md" | "lg";
 }
 
 /** A button that opens the file picker (a label wrapping a hidden input). */
